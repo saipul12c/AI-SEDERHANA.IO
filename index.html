@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 flex items-center justify-center min-h-screen transition-colors duration-300" id="body">
+
+  <!-- Theme Toggle Button -->
+  <div class="fixed top-4 right-4">
+    <button id="theme-toggle" onclick="toggleTheme()" class="p-3 bg-gray-300 dark:bg-gray-700 rounded-full shadow-lg transition-colors duration-300 hover:scale-110 focus:outline-none">
+      <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-800 dark:text-gray-200" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3a1 1 0 100-2 1 1 0 000 2zm6.364.636a1 1 0 011.414 1.414l-1.828 1.828a1 1 0 11-1.414-1.414zM21 12a1 1 0 100-2 1 1 0 000 2zm-3.636 6.364a1 1 0 011.414 1.414l-1.828 1.828a1 1 0 11-1.414-1.414zm-6.364 1.636a1 1 0 100-2 1 1 0 000 2zM3.636 17.778a1 1 0 111.414-1.414l1.828 1.828a1 1 0 11-1.414 1.414zm-1.636-5.778a1 1 0 110-2 1 1 0 010 2zM5.364 4.05a1 1 0 111.414 1.414L4.95 7.292a1 1 0 11-1.414-1.414zM12 15a3 3 0 110-6 3 3 0 010 6z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Chatbot Container -->
+  <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-xl w-full max-w-xl transition-colors duration-300">
+    <h2 class="text-3xl font-extrabold mb-6 text-center text-gray-800 dark:text-gray-200">AI Chatbot</h2>
+    <div id="chat-box" class="chat-box bg-gray-100 dark:bg-gray-700 p-4 rounded-lg h-72 overflow-y-auto mb-4 shadow-inner transition-colors duration-300">
+      <!-- Chat messages will appear here -->
+    </div>
+    <div class="flex items-center">
+      <input type="text" id="user-input" class="flex-1 p-3 border border-gray-300 dark:border-gray-600 rounded-l-lg transition-colors duration-300 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 focus:outline-none mr-2" placeholder="Type your message...">
+      <button onclick="sendMessage()" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 focus:outline-none shadow-lg">Send</button>
+    </div>
+  </div>
+
+  <script src="assets/js/bot.js"></script>
+  
+</body>
+</html>

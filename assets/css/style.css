@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.dark-mode .bg-white {
+  background-color: #333;
+}
+
+.dark-mode .bg-gray-50 {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .bg-gray-100 {
+  background-color: #3a3a3a;
+}
+
+.dark-mode .bg-gray-200 {
+  background-color: #4a4a4a;
+}
+
+.dark-mode .text-gray-800 {
+  color: #d1d1d1;
+}
+
+.dark-mode .border-gray-300 {
+  border-color: #5a5a5a;
+}
+
+.dark-mode .border-gray-600 {
+  border-color: #707070;
+}
+
+.dark-mode .text-gray-200 {
+  color: #f0f0f0;
+}
+
+.dark-mode .text-gray-800 {
+  color: #e0e0e0;
+}
+
+/* Button Styles */
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Theme Toggle Icon */
+#theme-toggle {
+  transition: background-color 0.3s;
+}
+
+.dark-mode #theme-toggle {
+  background-color: #555;
+}
+
+.dark-mode #theme-icon {
+  color: #f0f0f0;
+}
+
+/* Style untuk pesan pengguna di sisi kanan */
+.user-message {
+  background-color: #DCF8C6; /* Warna latar belakang pesan pengguna */
+  color: #333;
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 15px 0 15px 15px;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+/* Style untuk pesan bot di sisi kiri */
+.bot-message {
+  background-color: #E0E0E0; /* Warna latar belakang pesan bot */
+  color: #333;
+  align-self: flex-start;
+  padding: 10px;
+  border-radius: 0 15px 15px 15px;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+/* Mengatur layout chat-box untuk menampilkan pesan berbaris ke bawah */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
